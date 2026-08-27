@@ -76,6 +76,8 @@ export async function IsAuth() {
             success: true,
             response: await api.get(
                 "/api/auth/",
+                {},
+                { withCredentials: true }
             )
         };
     } catch (err: any) {

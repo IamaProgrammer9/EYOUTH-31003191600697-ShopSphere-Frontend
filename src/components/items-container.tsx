@@ -104,7 +104,7 @@ export function ItemsContainer({ searchQuery, minPrice, maxPrice, categoryId = -
                 
                 return <ItemCard
                     id={el.id.toString()}
-                    image={`http://localhost:3000/${el.imagesUrl[0]}`}
+                    image={`http://nile-bridge-backend.vercel.app/${el.imagesUrl[0]}`}
                     name={`${el.name}`}
                     price={el.price}
                     key={el.id}
