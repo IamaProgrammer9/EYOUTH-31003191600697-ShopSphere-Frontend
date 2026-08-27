@@ -59,7 +59,7 @@ export function ViewProduct() {
             alert("Review added successfully");
             initRequest();
         } else {
-            alert("Something wrong happened when adding the review");
+            alert("Try to signin before adding a review.");
         }
     }
 
