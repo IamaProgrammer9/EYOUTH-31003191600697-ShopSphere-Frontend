@@ -37,7 +37,7 @@ export function CartPage() {
                     <div key={index} className="shrink-0">
                         <CartItem
                             id={item.id.toString()}
-                            image={`http://localhost:3000/${item.imagesUrl[0]}`}
+                            image={`https://nile-bridge-backend.vercel.app/${item.imagesUrl[0]}`}
                             name={`${item.name}`}
                             price={item.price}
                             rating={item.rating}
