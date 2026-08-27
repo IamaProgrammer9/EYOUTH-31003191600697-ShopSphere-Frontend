@@ -83,7 +83,7 @@ export function ViewProduct() {
                 <div className="w-full h-full grid grid-rows-[auto_1fr]">
                     <div className="w-full h-100 flex flex-row justify-center overflow-hidden relative">
                         <img
-                            src={`http://localhost:3000/${product?.imagesUrl[activeImageIndex]}`}
+                            src={`https://nile-bridge-backend.vercel.app/${product?.imagesUrl[activeImageIndex]}`}
                             alt={product?.name}
                             className="max-w-200 max-h-full w-auto h-auto object-contain"
                         />
