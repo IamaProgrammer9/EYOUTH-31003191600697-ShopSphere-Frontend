@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import type { Product } from "../items-container";
 import { viewCartItems } from "../../api/cart";
 import { CartItem } from "../cart-item";
-import Chips from "../assets/chips.jpeg";
+import Chips from "../../assets/chips.jpeg";
 
 export function CartPage() {
     const [cartItems, setCartItems] = useState<Product[]>([]);
