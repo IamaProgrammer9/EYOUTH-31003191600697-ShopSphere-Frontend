@@ -7,7 +7,7 @@ export const api = axios.create({
 });
 
 export const reviewServiceApi = axios.create({
-    baseURL: import.meta.env.REVIEW_SERVICE_URL || "https://nile-bridge-reviews-service.vercel.app",
+    baseURL: import.meta.env.VITE_REVIEW_SERVICE_URL || "https://nile-bridge-reviews-service.vercel.app",
 })
 
 export default api;
