@@ -7,17 +7,17 @@ import api, { setAccessToken } from "./apiService";
  */
 export async function signin(email: string, password: string): Promise<{ success: boolean, response: any }> {
     try {
-        return {
-            success: true,
-            response: await api.post(
-                "/api/auth/signin",
-                {
-                    email,
-                    password
-                },
-            )
-        };
+        const result = await api.post(
+            "/api/auth/signin",
+            {
+                email,
+                password,
+            }
+        )
+        setAccessToken(result.data.accessToken);
+        return { success: true, response: result };
     } catch (err: any) {
+        setAccessToken(null);
         return { success: false, response: err.response };
     }
 }
